@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="property-list">
+      <label for="filter-type">Filter by Type:</label>
+      <select id="filter-type">
+        <option value="">All Types</option>
+        <option value="primary">Primary</option>
+        <option value="secondary">Secondary</option>
+      </select>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/markerclustererplus/src/markerclusterer.js"></script>
+    а
+    <script src="script.js"></script>
+
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+        border: 1px solid #ddd;
+      }
+
+      #property-list {
+        max-height: 400px;
+        overflow-y: auto;
+      }
+    </style>
+  </body>
+</html>
